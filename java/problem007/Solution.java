@@ -2,16 +2,16 @@
 // 1 is not a prime.
 // All primes except 2 are odd.
 // All primes greater than 3 can be written in the form 6k+/-1.
-// Any number n can have only one primefactor greater than n .
+// Any number n can have only one primefactor greater than sqrt(n).
 // The consequence for primality testing of a number n is: if we cannot find a number f less than
-// or equal n that divides n then n is prime: the only primefactor of n is n itself
+// or equal sqrt(n) that divides n then n is prime: the only primefactor of n is n itself
 
 import java.util.*;
 
 public class Solution {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
-        System.out.println(findNthPrime(10001));
+        System.out.println(findNthPrime(1000001));
         long endTime = System.nanoTime();
         System.out.println(endTime - startTime);
     }
